@@ -18,10 +18,6 @@ defmodule AdorableAvatarsEx.Utils.Sizing do
     min(max(safe_num, minimum), maximum)
   end
  
-  def parse_size do
-    %{ height: 400, width: 400 }
-  end
- 
   def size_tuple([w]), do: size_tuple([w, w]) 
   def size_tuple([w, h]) do
     [w, h]
@@ -34,7 +30,7 @@ defmodule AdorableAvatarsEx.Utils.Sizing do
     |> List.to_tuple
   end
 
-  def parse_size(raw_size, minimum \\ 40, maximum \\ 400) do
+  def parse_size(raw_size \\ "400", minimum \\ 40, maximum \\ 400) do
     {raw_width, raw_height} =
       raw_size
       |> String.downcase()
