@@ -4,7 +4,7 @@ defmodule AdorableAvatarsEx.Utils.HashTest do
   alias AdorableAvatarsEx.Utils.Hash
 
   test "greets the world" do
-    assert Hash.get('foo') == 'd'
+    assert Hash.get('foo') == :butt
   end
 end
 

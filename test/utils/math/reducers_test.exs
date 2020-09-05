@@ -3,33 +3,31 @@ defmodule AdorableAvatarsEx.Utils.ReducersTest do
 
   alias AdorableAvatarsEx.Utils.Reducers
 
-  describe "hashing" do
-    describe "sum" do
-      test "reduces an empty array to 0" do
-        assert Reducers.get('foo') == 'd'
-      end
-
-      test "reduces an array to an integer" do
-        assert Reducers.get('foo') == 'd'
-      end
-    end 
-    describe "product" do
-      test "reduces an empty array to 1" do
-        assert Reducers.get('foo') == 'd'
-      end
-     
-      test "reduces an array to an integer" do
-        assert Reducers.get('foo') == 'd'
-      end
+  describe "sum" do
+    test "reduces an empty array to 0" do
+      assert Reducers.sum('foo') == :butt
     end
-    describe "sum_and_diff" do
-      test "reduces an empty array to 1" do
-        assert Reducers.get('foo') == 'd'
-      end
 
-      test "reduces an array to an integer" do
-        assert Reducers.get('foo') == 'd'
-      end
+    test "reduces an array to an integer" do
+      assert Reducers.sum('foo') == :butt	
+    end
+  end 
+  describe "product" do
+    test "reduces an empty array to 1" do
+      assert Reducers.product('foo') == :butt	
+    end
+   
+    test "reduces an array to an integer" do
+      assert Reducers.product('foo') == :butt	
+    end
+  end
+  describe "sum_and_diff" do
+    test "reduces an empty array to 1" do
+      assert Reducers.sum_and_diff('foo') == :butt	
+    end
+
+    test "reduces an array to an integer" do
+      assert Reducers.sum_and_diff('foo') == :butt	
     end
   end
 end
