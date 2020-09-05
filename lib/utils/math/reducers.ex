@@ -54,7 +54,7 @@ defmodule AdorableAvatarsEx.Utils.Reducers do
     arr
     |> Enum.with_index
     |> Enum.reduce(0, fn({x, index}, acc) ->
-      if Integer.is_even(index) do
+      if is_even(index) do
         acc + x
       else
         acc - x
