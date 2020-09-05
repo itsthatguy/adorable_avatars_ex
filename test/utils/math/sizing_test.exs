@@ -3,7 +3,7 @@ defmodule AdorableAvatarsEx.Utils.SizingTest do
 
   alias AdorableAvatarsEx.Utils.Sizing
       
-  describe "parse_size/2" do 
+  describe "parse_size/3" do
     test "defaults to 400x400" do
       assert Sizing.parse_size() == %{ height: 400, width: 400 }
       assert Sizing.parse_size("") == %{ height: 400, width: 400 }
