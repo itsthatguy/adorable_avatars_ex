@@ -8,7 +8,7 @@ defmodule AdorableAvatarsEx.Utils.Hashing do
 
   ## Examples
 
-      iex> AdorableAvatarsEx.Hash.get('foo')
+      iex> AdorableAvatarsEx.Hashing.get('foo')
       :butt
 
   """

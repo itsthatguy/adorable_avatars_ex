@@ -9,7 +9,7 @@ defmodule AdorableAvatarsEx.Utils.Hash do
   ## Examples
 
       iex> AdorableAvatarsEx.Hash.get('foo')
-      :d
+      :butt
 
   """
   def get(phrase) do

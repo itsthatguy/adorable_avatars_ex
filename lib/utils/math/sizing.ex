@@ -8,7 +8,11 @@ defmodule AdorableAvatarsEx.Utils.Sizing do
 
   ## Examples
 
-      iex> 
+      iex> AdorableAvatarsEx.Utils.Sizing.parse_size("400")
+      %{ width: 400, height: 400 }
+     
+      iex> AdorableAvatarsEx.Utils.Sizing.parse_size("400")
+      %{ width: 400, height: 400 }
   """ 
   def value_or_maximum(value, _maximum) when is_integer(value) and value > 0, do: value
   def value_or_maximum(_value, maximum), do: maximum

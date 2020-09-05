@@ -1,5 +1,6 @@
 defmodule AdorableAvatarsEx.Utils.SizingTest do
   use ExUnit.Case
+  doctest AdorableAvatarsEx.Utils.Sizing
 
   alias AdorableAvatarsEx.Utils.Sizing
 
