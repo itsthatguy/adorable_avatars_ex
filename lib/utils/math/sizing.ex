@@ -10,7 +10,7 @@ defmodule AdorableAvatarsEx.Utils.Sizing do
 
       iex> 
   """ 
-  def value_or_maximum(value, _maximum) when value > 0, do: value 
+  def value_or_maximum(value, _maximum) when is_integer(value) and value > 0, do: value
   def value_or_maximum(_value, maximum), do: maximum
  
   def clamp(num, minimum, maximum) do
